@@ -1,0 +1,19 @@
+{
+  "name": "security_lambda",
+  "version": "0.0.1",
+  "scripts": {
+    "deploy:dev": "SLS_DEBUG=* node_modules/.bin/serverless deploy --stage dev",
+    "deploy:prod": "SLS_DEBUG=* node_modules/.bin/serverless deploy --stage prod",
+    "invoke:local": "SLS_DEBUG=* node_modules/.bin/serverless invoke local --function hello",
+    "invoke:dev": "SLS_DEBUG=* node_modules/.bin/serverless invoke --function hello --stage dev",
+    "invoke:prod": "SLS_DEBUG=* node_modules/.bin/serverless invoke --function hello --stage prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-chulbuji/security_lambda.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "serverless": "^1.37.0"
+  }
+}
